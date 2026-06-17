@@ -1,0 +1,19 @@
+name: Publish release
+
+on:
+  push:
+    tags:
+      - '*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version (optional)"
+        required: false
+        type: string
+
+jobs:
+  publish:
+    uses: Abstrakcionist/revit-build-infrastructure/.github/workflows/publish-release.yml@main
+    with:
+      version: ${{ github.event_name == 'workflow_dispatch' && inputs.version || '' }}
+    secrets: inherit

@@ -1,0 +1,14 @@
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>Spp</Name>
+        <Assembly>Spp\Spp.dll</Assembly>
+        <AddInId>7CB2853B-39BD-472E-A749-AA4BF1EFE691</AddInId>
+        <FullClassName>Spp.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+    </AddIn>
+    <ManifestSettings>
+        <UseRevitContext>False</UseRevitContext>
+        <ContextName>Spp</ContextName>
+    </ManifestSettings>
+</RevitAddIns>

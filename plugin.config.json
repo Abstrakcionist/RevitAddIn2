@@ -1,0 +1,12 @@
+{
+  "Plugin": {
+    "Name": "RevitAddIn2",
+    "ProductGuid": "8711BE41-0BA7-43B5-82F1-9DA4E6844F4F",
+    "Manufacturer": "Altek",
+    "RevitVersions": [ "R22", "R23", "R24", "R25", "R26" ]
+  },
+  "Build": {
+    "OutputDirectory": "output",
+    "HostProjectPath": "source/Spp/Spp.csproj"
+  }
+}
