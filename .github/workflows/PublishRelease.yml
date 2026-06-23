@@ -13,6 +13,8 @@ on:
 
 jobs:
   publish:
+    permissions:
+      contents: write
     uses: Abstrakcionist/revit-build-infrastructure/.github/workflows/publish-release.yml@main
     with:
       version: ${{ github.event_name == 'workflow_dispatch' && inputs.version || '' }}
